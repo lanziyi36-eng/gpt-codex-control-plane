@@ -1,6 +1,6 @@
 # gpt-codex-control-plane
 
-这是一个 GitHub-mediated ChatGPT Brain / Codex Executor 工作流模板。它采用 GitHub 仓库作为共享状态和 control plane，而不是 ChatGPT web 与 Codex 之间的直接原生实时耦合。
+这是一个 GitHub-mediated ChatGPT Brain / Codex Executor 工作流模板。它采用 GitHub 仓库作为共享状态和 control plane，而不是 ChatGPT web 与 Codex 之间的直接原生实时耦合。 
 
 ## Architecture
 
