@@ -1,0 +1,50 @@
+name: Codex Task
+description: Assign a scoped implementation task to Codex Executor.
+title: "[Codex Task] T-XXXX short objective"
+labels:
+  - codex-task
+body:
+  - type: input
+    id: task_id
+    attributes:
+      label: Task ID
+      description: Example: T-0002-update-docs
+      placeholder: T-0002-short-slug
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What should Codex complete?
+      placeholder: Describe the concrete outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: allowed_files
+    attributes:
+      label: Allowed files
+      description: Files or directories Codex may edit.
+      placeholder: |
+        - tasks/T-0002-update-docs/**
+        - docs/OPERATING_PROTOCOL.md
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: Checklist and validation commands.
+      placeholder: |
+        - [ ] Objective is complete.
+        - [ ] python scripts/validate_workspace.py passes.
+    validations:
+      required: true
+  - type: textarea
+    id: safety_notes
+    attributes:
+      label: Safety notes
+      description: Permission, isolation, secret, network, branch, and scope constraints.
+      placeholder: Keep NETWORK_ACCESS_FOR_CODEX off unless human approval is recorded.
+    validations:
+      required: true

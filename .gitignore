@@ -1,0 +1,43 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local environments
+.env
+.env.*
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+logs/
+
+# Codex/session/auth artifacts
+.codex/
+.codex-session/
+codex_sessions/
+codex-auth/
+codex-auth.json
+session.json
+session-*.json
+auth.json
+*.session
+*.auth
+*.token
+*.secret

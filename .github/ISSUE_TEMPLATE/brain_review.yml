@@ -1,0 +1,40 @@
+name: Brain Review
+description: Request ChatGPT Brain review of Codex output.
+title: "[Brain Review] T-XXXX review request"
+labels:
+  - brain-review
+body:
+  - type: input
+    id: task_id
+    attributes:
+      label: Task ID
+      description: Example: T-0002-update-docs
+      placeholder: T-0002-short-slug
+    validations:
+      required: true
+  - type: input
+    id: pr_number
+    attributes:
+      label: PR number
+      description: Pull request number or NONE.
+      placeholder: "#12"
+    validations:
+      required: true
+  - type: input
+    id: result_file
+    attributes:
+      label: Result file
+      description: Path to Codex result file.
+      placeholder: tasks/T-0002-update-docs/result.md
+    validations:
+      required: true
+  - type: textarea
+    id: review_questions
+    attributes:
+      label: Review questions
+      description: Specific questions for ChatGPT Brain.
+      placeholder: |
+        Should this be MERGE, REQUEST_CHANGES, REJECT, or BLOCKED_NEEDS_HUMAN_DECISION?
+        Are there correctness, security, scope, or permission concerns?
+    validations:
+      required: true
