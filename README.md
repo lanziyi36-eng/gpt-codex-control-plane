@@ -51,6 +51,14 @@ scripts/validate_workspace.py
 4. Codex 按 task acceptance criteria 执行，并更新 `tasks/<TASK_ID>/result.md`。
 5. ChatGPT Brain 或 human 阅读 `result.md`、PR diff 和 `review.md`，给出下一步建议。
 
+## Daily Operation
+
+日常使用请优先阅读：
+
+- `docs/DAILY_USE.md`
+- `docs/TASK_LIFECYCLE.md`
+- `docs/BRAIN_CODEX_HANDOFF.md`
+
 ## Validation
 
 运行：

@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Project name | gpt-codex-control-plane |
-| Version | 0.1.0 |
-| Active task | T-0001-bootstrap |
+| Version | 0.2.0 |
+| Active task | T-0002-operational-loop |
 | Latest PR | NONE |
-| Current mode | Bootstrap / Scheme A GitHub-mediated |
-| Next expected action | Codex runs `python scripts/validate_workspace.py`, updates `tasks/T-0001-bootstrap/result.md`, and prepares the bootstrap commit. |
+| Current mode | Operational loop hardening / Scheme A GitHub-mediated |
+| Next expected action | Codex executes T-0002 acceptance, updates result.md, then ChatGPT Brain reviews. |
 
 ## Notes
 
